@@ -1,6 +1,7 @@
 .article {
   width: 319px;
   height: 327px;
+  margin-bottom: 1rem;
 }
 .article img {
   border-radius: 0.5rem;
@@ -9,7 +10,7 @@
 .article .content {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 line-height: 1.7rem;
 }
 .article h1 {
@@ -24,6 +25,6 @@ line-height: 1.7rem;
 }
 .article h3 {
   color: var(--clr-red);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 400;
 }

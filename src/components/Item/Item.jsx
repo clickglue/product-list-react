@@ -1,7 +1,7 @@
 import styles from "./Item.module.css";
 import AddToCart from "../AddToCart/AddToCart";
 
-const itemData = {
+const itemDataBU = {
     image: {
       thumbnail: "/src/assets/images/image-waffle-thumbnail.jpg",
       mobile: "/src/assets/images/image-waffle-mobile.jpg",
@@ -13,7 +13,7 @@ const itemData = {
     price: 6.5,
   };
   
-  function Item() {
+  function Item({itemData}) {
     return (
       <article className={styles.article}>
         <picture>

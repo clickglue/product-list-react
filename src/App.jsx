@@ -6,7 +6,10 @@ import data from "../data.json";
 function App() {
   return (
     <main className={styles.app}>
-      <Item itemData={data}></Item>
+      <h1 className={styles.head1}>Desserts</h1>
+      {data.map((item) => (
+        <Item itemData={item}></Item>
+      ))}
       <Cart></Cart>
     </main>
   );
