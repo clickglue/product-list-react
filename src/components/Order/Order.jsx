@@ -32,9 +32,8 @@ function Order() {
             alt="Plus"
           />
         </div>
-<hr />
+        <hr />
       </div>
-      
     </main>
   );
 }

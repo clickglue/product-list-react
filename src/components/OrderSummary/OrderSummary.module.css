@@ -1,0 +1,47 @@
+.orderSummary {
+  padding: 0.875rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5rem;
+  grid-template-areas:
+    "picture title title title total"
+    "picture amount itemprice empty total"
+    "line line line line line";
+}
+.orderSummary img {
+  grid-area: picture;
+  width: 40px;
+  border-radius: 0.25rem;
+}
+.orderSummary .name {
+  grid-area: title;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.orderSummary .quantity {
+  grid-area: amount;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--clr-red);
+}
+.orderSummary .price {
+  grid-area: itemprice;
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+.orderSummary .itemTotal {
+    text-align: end;
+  margin-top: 1rem;
+  grid-area: total;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.orderSummary hr {
+  grid-area: line;
+  border: none;
+  height: 1px;
+  background-color: var(--clr-rose-100);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

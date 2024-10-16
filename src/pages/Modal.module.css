@@ -1,0 +1,28 @@
+.modal {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.modal .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.modal .total h2 {
+  font-weight: 400;
+  color: var(--clr-rose-900);
+  font-size: 0.875rem;
+}
+.modal .total p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--clr-rose-900);
+  text-align: right;
+}
+.modal .orderSummary{
+    background-color: var(--clr-rose-50);
+    border-radius: 0.5rem;
+}
