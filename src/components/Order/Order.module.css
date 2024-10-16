@@ -1,6 +1,6 @@
 .order .orderGrid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 6fr 1fr;
+  grid-template-columns: 1fr 2fr 2fr 4fr 1fr;
   grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
     "title title title title delete"
@@ -44,7 +44,7 @@
   position: relative;
   width: 44px;
   height: 44px;
-  margin-right: -8px;
+  margin-right: -3rem;
 }
 .order .orderGrid .removeSign .img1 {
   transform: translate(0px, 19px);
