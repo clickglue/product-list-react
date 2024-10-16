@@ -1,0 +1,54 @@
+.order .orderGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 6fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  grid-template-areas:
+    "title title title title delete"
+    "amount itemprice totalprice empty delete"
+    "line line line line line";
+}
+.order h1 {
+  grid-area: title;
+  color: var(--clr-rose-900);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.order .orderGrid .orderAmount {
+  grid-area: amount;
+  color: var(--clr-red);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.order .orderGrid .itemPrice {
+  grid-area: itemprice;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--clr-rose-500);
+}
+.order .orderGrid .orderTotal {
+  grid-area: totalprice;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--clr-rose-500);
+}
+.order .orderGrid hr {
+  grid-area: line;
+  border: none;
+  height: 1px;
+  background-color: var(--clr-rose-100);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.order .orderGrid .removeSign {
+  grid-area: delete;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-right: -8px;
+}
+.order .orderGrid .removeSign .img1 {
+  transform: translate(0px, 19px);
+}
+.order .orderGrid .removeSign .img2 {
+  transform: translate(5px, 0px) scale(1, 1);
+}

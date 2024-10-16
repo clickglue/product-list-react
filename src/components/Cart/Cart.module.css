@@ -1,0 +1,16 @@
+.cart {
+    width: 327px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.cart header h1{
+    text-align: left;
+    color: var(--clr-red);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.cart .orderContainer{
+    
+}

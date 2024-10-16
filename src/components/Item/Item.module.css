@@ -1,0 +1,30 @@
+.article {
+  width: 319px;
+  height: 327px;
+  background-color: beige;
+}
+.article img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.article .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+line-height: 1.7rem;
+}
+.article h1 {
+  font-weight: 400;
+  color: var(--clr-rose-500);
+  font-size: 0.875rem;
+}
+.article h2 {
+  font: var(--clr-rose-900);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.article h3 {
+  color: var(--clr-red);
+  font-size: 1rem;
+  font-weight: 600;
+}

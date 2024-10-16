@@ -1,0 +1,71 @@
+.addToCart {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top:-22px;
+}
+.addToCart button{
+    position: relative;
+    height: 44px;
+    width: 160px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 1;
+    border-width: 1px;
+}
+.addToCart .button1{
+    display: flex;
+    border-color: var(--clr-rose-400);
+}
+.addToCart .button2 {
+    display: none;
+    background-color: var(--clr-red);
+    padding: 0 0rem;
+}
+.addToCart .button1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.addToCart h1{
+    color:var(--clr-rose-900);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.addToCart .button2 .minusSign{
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+.addToCart .button2 img{
+    position: absolute;
+    justify-self: start;
+    align-self: start;
+}
+.addToCart .button2 .minusSign .img1{
+    transform: translate(0px,4px);
+}
+.addToCart .button2 .minusSign .img2{
+    transform: translate(-4px, 18px) scale(0.5,0.7);
+}
+.addToCart .button2 .plusSign{
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin-right: -8px;
+}
+.addToCart .button2 .plusSign .img1{
+    transform: translate(0px,4px);
+}
+.addToCart .button2 .plusSign .img2{
+    transform: translate(-4px, 0px) scale(0.5,0.5);
+}
+.addToCart .button2 h1{
+    color: white;
+    width: 60px;
+}
+
+
+
