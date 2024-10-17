@@ -13,6 +13,7 @@ function Modal() {
       <div className={styles.orderSummary}>
         <OrderSummary></OrderSummary>
         <OrderSummary></OrderSummary>
+        <OrderSummary></OrderSummary>
         <div>
           <div className={styles.total}>
             <h2>Order Total</h2>

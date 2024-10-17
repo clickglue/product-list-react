@@ -24,6 +24,10 @@
   src: url("/src/assets/fonts/red-hat-text-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+#root {
+  font-family: 'Red Hat Text';
+}
+
 :root {
   --clr-rose-500: #87635a;
   --clr-rose-900: #260F08;

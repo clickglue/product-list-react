@@ -1,9 +1,20 @@
 .modal {
     background-color: white;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
+    width: 375px;
 }
-
+.modal h3{
+  font-size: 0.875rem;
+  color: var(--clr-rose-500);
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.modal h1{
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  line-height: 120%;
+}
 .modal .total {
   display: flex;
   justify-content: space-between;
@@ -25,4 +36,18 @@
 .modal .orderSummary{
     background-color: var(--clr-rose-50);
     border-radius: 0.5rem;
+}
+.modal button{
+  background-color: var(--clr-red);
+  border: none;
+  height:53px;
+  border-radius: 26px;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.modal button h2{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
 }
