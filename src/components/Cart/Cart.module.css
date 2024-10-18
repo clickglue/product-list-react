@@ -34,22 +34,29 @@
   border-radius: 8px;
   padding: 16px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 .cart .carbon p {
+  margin-left: 2rem;
   font-size: 0.875rem;
   font-weight: 400;
 }
-.cart button{
-    background-color: var(--clr-red);
-    height: 52px;
-    width: 100%;
-    border-radius: 26px;
-    border: none;
+.cart button {
+  background-color: var(--clr-red);
+  height: 52px;
+  width: 100%;
+  border-radius: 26px;
+  border: none;
 }
-.cart button h2{
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
+.cart button h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
 }
+@media (min-width: 1440px) {
+  .cart {
+    width: 384px;
+  }
+}
+

@@ -27,3 +27,13 @@ line-height: 1.7rem;
   font-size: 1.125rem;
   font-weight: 400;
 }
+@media (min-width: 1440px) {
+  .article{
+    width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .article{
+    width: 213px;
+  }
+}

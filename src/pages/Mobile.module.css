@@ -5,10 +5,10 @@
   display: flex;
   flex-direction: column;
 }
-.app .itemContainer{
+.app .itemContainer {
   display: flex;
   flex-wrap: wrap; /* This allows the cards to wrap to the next row */
-  gap: 16px; /* Space between cards */
+  gap: 1rem; /* Space between cards */
   justify-content: space-between; /* Align cards horizontally */
   padding: 2rem;
   align-items: center;
@@ -17,6 +17,14 @@
   width: 100%;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+@media (min-width: 1440px) {
+  .app {
+    flex-direction: row;
+  }
+  .app .itemContainer {
+    max-width: 800px;
+  }
 }
