@@ -1,15 +1,22 @@
-.app{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: var(--clr-rose-50);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .app .head1{
-    width: 100%;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 5rem;
-  }
+.app {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--clr-rose-50);
+  display: flex;
+  flex-direction: column;
+}
+.app .itemContainer{
+  display: flex;
+  flex-wrap: wrap; /* This allows the cards to wrap to the next row */
+  gap: 16px; /* Space between cards */
+  justify-content: space-between; /* Align cards horizontally */
+  padding: 2rem;
+  align-items: center;
+}
+.app .head1 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+}

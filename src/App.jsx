@@ -6,7 +6,7 @@ function App() {
   return (
     <main className={styles.app}>
       <Modal></Modal>
-      {/*<Mobile></Mobile>*/}
+      <Mobile></Mobile>
     </main>
   );
 }

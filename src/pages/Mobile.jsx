@@ -7,9 +7,11 @@ function Mobile() {
   return (
     <main className={styles.app}>
       <h1 className={styles.head1}>Desserts</h1>
+      <div className={styles.itemContainer}>
       {data.map((item) => (
         <Item itemData={item}></Item>
       ))}
+      </div>
       <Cart></Cart>
     </main>
   );
