@@ -1,8 +1,10 @@
 import styles from "/src/components/Cart/Cart.module.css";
 import Order from "/src/components/Order/Order";
-import { useEffect } from "react";
+import { useState } from "react";
 
 function Cart({ cartData, onDataChange, onConfirm }) {
+  var visible=false
+
   function calcultateTotal() {
     var total = 0;
     cartData.map((item) => {
@@ -19,6 +21,7 @@ function Cart({ cartData, onDataChange, onConfirm }) {
         total = total + 1;
       }
     });
+    if(total==0){visible=false} else {visible=true}
     return total;
   }
  
@@ -27,7 +30,7 @@ function Cart({ cartData, onDataChange, onConfirm }) {
       <header>
         <h1>Your Cart({calcultateItems()})</h1>
       </header>
-      <main>
+      <main style={{ display: visible ? 'block' : 'none' }}>
         <div className={styles.orderContainer}>
           {cartData.map((item) =>
             item.quantity != 0 ? (
@@ -59,7 +62,12 @@ function Cart({ cartData, onDataChange, onConfirm }) {
         <button onClick={onConfirm}>
           <h2>Confirm Order</h2>
         </button>
+
       </main>
+      <div className={styles.emptyContainer} style={{ display: visible ? 'none' : 'block' }}>
+          <img src="/src/assets/images/illustration-empty-cart.svg" alt="Empty cart!" />
+          <h2>Your added items will appear here!</h2>
+        </div>
     </article>
   );
 }

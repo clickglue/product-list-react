@@ -7,25 +7,25 @@ function AddToCart({ itemData, onDataChange }) {
     itemData: PropTypes.object.isRequired,
     onDataChange: PropTypes.func.isRequired,
   };
-  const [quantity, setQuantity] = useState(itemData.quantity);
+  //const [quantity, setQuantity] = useState(itemData.quantity);
 
   function handleMinus() {
-    if (quantity == 1) {
-      setQuantity(0);
+    if (itemData.quantity == 1) {
+      //setQuantity(0);
       itemData.quantity=0
       itemData.itemTotal=0
       onDataChange(itemData);
     } else {
-      setQuantity(quantity - 1);
-      itemData.quantity=quantity-1
-      itemData.itemTotal=(quantity-1)*itemData.price
+      //setQuantity(quantity - 1);
+      itemData.quantity=itemData.quantity-1
+      itemData.itemTotal=(itemData.quantity-1)*itemData.price
       onDataChange(itemData);
     }
   }
   function handlePlus() {
-    setQuantity(quantity + 1);
-    itemData.quantity=quantity+1
-    itemData.itemTotal=(quantity+1)*itemData.price
+    //setQuantity(quantity + 1);
+    itemData.quantity=itemData.quantity+1
+    itemData.itemTotal=(itemData.quantity+1)*itemData.price
     onDataChange(itemData);
   }
 
@@ -33,7 +33,7 @@ function AddToCart({ itemData, onDataChange }) {
     <main className={styles.addToCart}>
       <button
         className={styles.button1}
-        style={{ display: quantity == 0 ? "flex" : "none" }}
+        style={{ display: itemData.quantity == 0 ? "flex" : "none" }}
         onClick={handlePlus}
       >
         <img src="/src/assets/images/icon-add-to-cart.svg" alt="Add to cart" />
@@ -41,7 +41,7 @@ function AddToCart({ itemData, onDataChange }) {
       </button>
       <button
         className={styles.button2}
-        style={{ display: quantity == 0 ? "none" : "flex" }}
+        style={{ display: itemData.quantity == 0 ? "none" : "flex" }}
       >
         <div className={styles.minusSign} onClick={handleMinus}>
           <img
@@ -55,7 +55,7 @@ function AddToCart({ itemData, onDataChange }) {
             alt="Minus"
           />
         </div>
-        <h1>{quantity}</h1>
+        <h1>{itemData.quantity}</h1>
         <div className={styles.plusSign} onClick={handlePlus}>
           <img
             className={styles.img1}

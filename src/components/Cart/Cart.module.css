@@ -54,6 +54,16 @@
   font-weight: 600;
   font-size: 1rem;
 }
+.emptyContainer img{
+margin: 0 auto;
+}
+.emptyContainer h2{
+  margin: 1rem auto;
+  color: var(--clr-rose-500);
+  font-size: 0.875rem;
+  font-weight: 600;
+  width: fit-content;
+}
 @media (min-width: 1440px) {
   .cart {
     width: 384px;
