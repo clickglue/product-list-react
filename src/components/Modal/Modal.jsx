@@ -23,7 +23,7 @@ function Modal({ cartData, onCloseModal }) {
       <div className={styles.orderSummary}>
         {cartData.map((item) =>
           item.quantity != 0 ? (
-            <OrderSummary itemData={item}></OrderSummary>
+            <OrderSummary key={item.name} itemData={item}></OrderSummary>
           ) : (
             ""
           )

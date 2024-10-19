@@ -1,5 +1,6 @@
 import styles from "/src/components/Cart/Cart.module.css";
 import Order from "/src/components/Order/Order";
+import { useEffect } from "react";
 
 function Cart({ cartData, onDataChange, onConfirm }) {
   function calcultateTotal() {
@@ -20,8 +21,7 @@ function Cart({ cartData, onDataChange, onConfirm }) {
     });
     return total;
   }
-
-  
+ 
   return (
     <article className={styles.cart}>
       <header>
@@ -29,13 +29,13 @@ function Cart({ cartData, onDataChange, onConfirm }) {
       </header>
       <main>
         <div className={styles.orderContainer}>
-        {cartData.map((item) =>
-          item.quantity != 0 ? (
-            <Order itemData={item} onDataChange={onDataChange}></Order>
-          ) : (
-            ""
-          )
-        )}
+          {cartData.map((item) =>
+            item.quantity != 0 ? (
+              <Order key={item.name} itemData={item} onDataChange={onDataChange}></Order>
+            ) : (
+              ""
+            )
+          )}
         </div>
 
         <div className={styles.total}>

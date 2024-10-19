@@ -5,7 +5,7 @@ function Order({ itemData, onDataChange }) {
   function reset() {
     itemData.quantity=0
     onDataChange(itemData);
-    console.log('reset')
+    console.log('reset'+itemData.quantity)
   }
 
   return (
