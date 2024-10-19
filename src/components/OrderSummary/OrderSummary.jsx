@@ -1,20 +1,6 @@
 import styles from "/src/components/OrderSummary/OrderSummary.module.css";
 
-const itemData = {
-  image: {
-    thumbnail: "/src/assets/images/image-waffle-thumbnail.jpg",
-    mobile: "/src/assets/images/image-waffle-mobile.jpg",
-    tablet: "/src/assets/images/image-waffle-tablet.jpg",
-    desktop: "/src/assets/images/image-waffle-desktop.jpg",
-  },
-  name: "Waffle with Berries",
-  category: "Waffle",
-  price: 6.5,
-  itemTotal: 28.0,
-  quantity: 2,
-};
-
-function OrderSummary() {
+function OrderSummary({itemData}) {
   return (
     <main className={styles.orderSummary}>
       <img src={itemData.image.thumbnail} alt={itemData.name} />

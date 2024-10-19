@@ -2,9 +2,10 @@ import styles from "./Item.module.css";
 import PropTypes from "prop-types";
 import AddToCart from "../AddToCart/AddToCart";
 
-function Item({ itemData }) {
+function Item({ itemData, onDataChange }) {
   Item.propTypes = {
     itemData: PropTypes.object.isRequired,
+    onDataChange: PropTypes.func.isRequired
   };
 
   return (
@@ -14,7 +15,7 @@ function Item({ itemData }) {
         <source srcSet={itemData.image.tablet} media="(min-width: 768px)" />
         <img src={itemData.image.mobile} alt={`Picture of ${itemData.name}`} />
       </picture>
-      <AddToCart />
+      <AddToCart itemData={itemData} onDataChange={onDataChange}/>
       <section className={styles.content}>
         <h1>{itemData.category}</h1>
         <h2>{itemData.name}</h2>
