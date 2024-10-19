@@ -12,6 +12,7 @@ function Modal({ cartData, onCloseModal }) {
     return total;
   }
   return (
+    <div className={styles.backdrop}>
     <main className={styles.modal}>
       <img
         src="/src/assets/images/icon-order-confirmed.svg"
@@ -43,6 +44,7 @@ function Modal({ cartData, onCloseModal }) {
         <h2>Start New Order</h2>
       </button>
     </main>
+    </div>
   );
 }
 
