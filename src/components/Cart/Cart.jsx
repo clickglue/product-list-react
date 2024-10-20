@@ -1,6 +1,5 @@
-import styles from "/src/components/Cart/Cart.module.css";
-import Order from "/src/components/Order/Order";
-import { useState } from "react";
+import styles from "./Cart.module.css";
+import Order from "../Order/Order";
 
 function Cart({ cartData, onDataChange, onConfirm }) {
   var visible=false
@@ -52,7 +51,7 @@ function Cart({ cartData, onDataChange, onConfirm }) {
         </div>
         <div className={styles.carbon}>
           <img
-            src="/src/assets/images/icon-carbon-neutral.svg"
+            src="./assets/images/icon-carbon-neutral.svg"
             alt="Carbon Neutral"
           />
           <p>
@@ -65,7 +64,7 @@ function Cart({ cartData, onDataChange, onConfirm }) {
 
       </main>
       <div className={styles.emptyContainer} style={{ display: visible ? 'none' : 'block' }}>
-          <img src="/src/assets/images/illustration-empty-cart.svg" alt="Empty cart!" />
+          <img src="./assets/images/illustration-empty-cart.svg" alt="Empty cart!" />
           <h2>Your added items will appear here!</h2>
         </div>
     </article>

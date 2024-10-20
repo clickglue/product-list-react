@@ -23,12 +23,12 @@ function Order({ itemData, onDataChange }) {
         <div className={styles.removeSign} onClick={reset}>
           <img
             className={styles.img1}
-            src="/src/assets/images/icon-circle-grey.svg"
+            src="./assets/images/icon-circle-grey.svg"
             alt="circle"
           />
           <img
             className={styles.img2}
-            src="/src/assets/images/icon-remove-item.svg"
+            src="./assets/images/icon-remove-item.svg"
             alt="Plus"
           />
         </div>

@@ -1,5 +1,5 @@
-import styles from "/src/App.module.css";
-import Mobile from "/src/pages/Mobile";
+import styles from "./App.module.css";
+import Mobile from "./pages/Mobile";
 
 
 function App() {

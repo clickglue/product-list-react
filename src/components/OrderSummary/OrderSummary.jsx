@@ -1,4 +1,4 @@
-import styles from "/src/components/OrderSummary/OrderSummary.module.css";
+import styles from "./OrderSummary.module.css";
 
 function OrderSummary({itemData}) {
   return (

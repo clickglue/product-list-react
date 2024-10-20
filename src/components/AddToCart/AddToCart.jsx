@@ -36,7 +36,7 @@ function AddToCart({ itemData, onDataChange }) {
         style={{ display: itemData.quantity == 0 ? "flex" : "none" }}
         onClick={handlePlus}
       >
-        <img src="/src/assets/images/icon-add-to-cart.svg" alt="Add to cart" />
+        <img src="./assets/images/icon-add-to-cart.svg" alt="Add to cart" />
         <h1>Add to Cart</h1>
       </button>
       <button
@@ -46,12 +46,12 @@ function AddToCart({ itemData, onDataChange }) {
         <div className={styles.minusSign} onClick={handleMinus}>
           <img
             className={styles.img1}
-            src="/src/assets/images/icon-circle.svg"
+            src="./assets/images/icon-circle.svg"
             alt="circle"
           />
           <img
             className={styles.img2}
-            src="/src/assets/images/icon-decrement-quantity.svg"
+            src="./assets/images/icon-decrement-quantity.svg"
             alt="Minus"
           />
         </div>
@@ -59,12 +59,12 @@ function AddToCart({ itemData, onDataChange }) {
         <div className={styles.plusSign} onClick={handlePlus}>
           <img
             className={styles.img1}
-            src="/src/assets/images/icon-circle.svg"
+            src="./assets/images/icon-circle.svg"
             alt="circle"
           />
           <img
             className={styles.img2}
-            src="/src/assets/images/icon-increment-quantity.svg"
+            src="./assets/images/icon-increment-quantity.svg"
             alt="Plus"
           />
         </div>

@@ -1,5 +1,5 @@
-import styles from "/src/components/Modal/Modal.module.css";
-import OrderSummary from "/src/components/OrderSummary/OrderSummary";
+import styles from "./Modal.module.css";
+import OrderSummary from "../OrderSummary/OrderSummary";
 
 function Modal({ cartData, onCloseModal }) {
   function calcultateTotal() {
@@ -15,7 +15,7 @@ function Modal({ cartData, onCloseModal }) {
     <div className={styles.backdrop}>
     <main className={styles.modal}>
       <img
-        src="/src/assets/images/icon-order-confirmed.svg"
+        src="./assets/images/icon-order-confirmed.svg"
         alt="Order confirmed!"
       />
       <h1>Order Confirmed</h1>

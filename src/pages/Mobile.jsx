@@ -1,18 +1,35 @@
 import { useState, useEffect } from "react";
-import styles from "/src/pages/Mobile.module.css";
-import Item from "/src/components/Item/Item";
-import Modal from "/src/components/Modal/Modal";
-import Cart from "/src/components/Cart/Cart";
+import styles from "./Mobile.module.css";
+import Item from "../components/Item/Item";
+import Modal from "../components/Modal/Modal";
+import Cart from "../components/Cart/Cart";
 import data from "/data.json";
 
 function Mobile() {
-
   const [cartData, setCartData] = useState(data);
   const [showModal, setShowModal] = useState(false);
-  
-  useEffect(()=>{
 
-  }),[];
+  function translate() {
+    // Determine if the app is running in production or development
+    const basePath =
+      process.env.NODE_ENV === "production" ? "/product-list-react" : "";
+
+    // Adjust the image paths dynamically based on the environment
+    const updatedProducts = data.map((product) => ({
+      ...product,
+      image: {
+        thumbnail: `${basePath}${product.image.thumbnail}`,
+        mobile: `${basePath}${product.image.mobile}`,
+        tablet: `${basePath}${product.image.tablet}`,
+        desktop: `${basePath}${product.image.desktop}`,
+      },
+    }));
+    setCartData(updatedProducts);
+  }
+
+  useEffect(() => {
+    translate();
+  }, []);
 
   function onDataChange(updatedCartData) {
     const updatedItems = cartData.map((item) =>
@@ -23,9 +40,9 @@ function Mobile() {
           }
         : item
     );
-
     setCartData(updatedItems);
   }
+
   function onConfirm() {
     setShowModal(true);
     //show modal
@@ -33,10 +50,12 @@ function Mobile() {
   function onCloseModal() {
     setShowModal(false);
     data.forEach((element) => {
-      element.quantity=0
+      element.quantity = 0;
     });
-    onDataChange(data)
+    onDataChange(data);
+
     setCartData(data);
+    translate();
   }
 
   return (
