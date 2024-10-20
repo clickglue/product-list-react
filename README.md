@@ -21,9 +21,7 @@ Your users should be able to:
 
 ### Screenshot
 
-![Desktop]()
-![Desktop-active]()
-![Mobile]()
+![Desktop](./Screenshot%202024-10-20%20at%2014.49.55.png)
 
 ### Links
 
